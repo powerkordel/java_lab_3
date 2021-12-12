@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +16,32 @@ public class Main {
             e) w klasie Main proszę stworzyć objekty podobnie jak w przykładzie 5,
             oraz stworzyć listę typu najbardziej generycznego np. List<Budynek>
          */
+
+        Budynek mieszkanie = new Budynek("ul. Grunwaldzka 15", 45.9);
+        System.out.println(mieszkanie.toString());
+        System.out.println("Czynsz wynosi: " + mieszkanie.czynsz());
+
+        Szkola podstawowa = new Szkola("ul. Czarneckiego 68",950.75, 5);
+        System.out.println(podstawowa.toString());
+        System.out.println(podstawowa.czynsz());
+
+        Szkola liceum = new Szkola ("ul. Warynskiego 23",780, 4);
+        System.out.println(liceum.toString());
+        System.out.println(liceum.czynsz());
+
+        Universytet gdanski = new Universytet("ul. Bazynskiego 8", 50228.5,7,"Uniwersytet Gdanski");
+        System.out.println(gdanski.toString());
+        System.out.println(gdanski.czynsz());
+
+        List <Budynek> listaBudynkow = new ArrayList<>();
+
+        listaBudynkow.add(mieszkanie);
+        listaBudynkow.add(podstawowa);
+        listaBudynkow.add(liceum);
+        listaBudynkow.add(gdanski);
+
+        System.out.println(listaBudynkow);
+
 
     }
 }
