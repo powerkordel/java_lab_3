@@ -1,0 +1,2 @@
+public enum WydzialEnum { INFORMATYKA, BIZNES, ADMINISTRACJA}
+
